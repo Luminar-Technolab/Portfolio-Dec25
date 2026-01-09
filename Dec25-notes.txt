@@ -1,0 +1,187 @@
+
+
+            HTML
+        -------------
+
+    1. HTML : HyperText Markup Language - is used to display contents in browser web pages
+    2. HTML Elements : HTML documents consist of Elements
+        <starting-tag>content</edning-tag>
+    3. HTML 5 Structure
+        <html lang="en">
+            <head>
+            <meta>
+            <title></title>
+            </head>
+            <body> 
+                contentes tobe displayed in browser
+            </body>
+        </html>
+    4. Tags : used to display different Contents in webpage
+    5. According to display of tags in browser we can divide it into 2 parts
+        - Block Elements : used to display content using browser entire width, heading tags,p tags
+        - Inline Elements : used to display contents according to its size, ex: a tag,
+    5. Basic Tags
+        - Heading : h1,h2,h3,h4,h5,h6 Tags
+        - Paragraph : p Tag
+        - Text formatting tags : mark,b,i,em,s,sub,sup tags
+        - Links : anchor / a tags
+        - break tag : used to break the line 
+        - list : 
+            - ordered list : ol tag
+            - unorderd list : ul tag
+            - list items : li tag
+            - description list : dl,dt,dd tag
+        - table : table, thead,tbody,tr,th,td tags
+        - images : img  tag 
+        - container tags : div,section,article etc.
+        - video tag : video controls
+        - iframe : to embed contents from other website
+        - form tag : used to hold user inputs
+        - to input data : input tag (type: text, number,date,button,checkbox,radio,range,file...)
+        - dropdown : select tag , option tag
+        - button 
+    6. Semantic Tags : used to describe meaning and role of content to browser & user
+        - SEO friendly website
+        - core semantic layout tags of webpage : header , nav , main, section , article, aside, footer etc.
+
+                CSS
+        ------------------
+
+    1. CSS (Cascading Style Sheets) : Styling html Elements
+    2. What CSS is used for : Colors, fonts, spacing, Layouts (Flexbox, Grid), Responsive design (mobile, tablet, desktop), Animations & transitions, Dark/light themes
+    3. Ways to apply CSS to html Elements
+        - Inline CSS : using 'style attribute' of an html Elements
+            - syntax : style="property:value;"
+        - Internal CSS: using 'style tag' to apply css to html page
+            - syntax :  <style>
+                            css-selector {
+                                property:value;
+                            }
+                        </style>
+        - External CSS : using External CSS file to apply style to html Elements, link css file to html using 'link tag'
+            - syntax : css-selector {
+                                property:value;
+                            }
+    4. Selectors : used to select html Elements to css
+        - using Tag name : syntax - tagname{ property:value;}
+        - using id : syntax - #id{ property:value;}
+        - using class: syntax - .class-name{ property:value;}
+        - Universal selector : used to select all Elements in an html page, using *
+        - CSS Combinators
+            - Grouping selector : using commas
+            - Descendant selector : using space
+            - Child selector : using >
+            - All Sibling selector : using ~
+            - Immeadiate Sibling selector : using +
+    5. Box Model : every HTML element is treated like a rectangular box.
+        - The box model defines how space and size are calculated for that element.
+        - Parts of the Box Model
+            - Content : The actual content: text, image, video, etc., Width & height apply only to the content by default.
+            - Border : Surrounds padding + content, Has thickness, style, and color
+            - Padding : Space between content and border, Increases the visible size of the element
+            - Margin : Space outside the border, Creates distance between elements
+        - box-sizing Property
+            - content-box : Width = content only
+            - border-box : Width = padding + border + content
+    6. Float : float moves an element to the left or right of its container and allows text or inline elements to wrap around it. 
+    7. Flex Box : used to align, space, and arrange items in one direction (row or column)
+        - Flexbox is a layout model for arranging elements inside a container tag: Horizontally or vertically, Even spacing, Easy centering (yes, finally!), Responsive by default
+            - Flex container → the parent : set its display as flex
+            - Flex items → the children
+            - flex-direction : row , row-reverse, column , column-reverse
+            - justify-content : Aligns items horizontally (row) or vertically (column)
+            - align-items : Aligns items perpendicular to main axis , space to vertically
+            - flex-wrap : Allows items to wrap into next line
+            - gap : Spacing between items (cleaner than margin!)
+    8. Position : controls how an element is placed on the page and what it’s positioned relative to.
+        - position: static | relative | absolute | fixed | sticky;
+        - when an element position i set then browser adds top, right, bottem & left position along with margin
+    9. Psudeo-Class : A pseudo-class is a keyword added to a selector that defines a special state of an element.
+        - syntax : selector:pseudo-class {   property: value; }
+        - pseudo-class : hover/active/focus/visited/link/first-child/last-child/nth-child()/not/checked
+        - Pseudo -class vs psudeo-element
+            Pseudo-class → : (state)
+            Pseudo-element → :: (part of element)
+    10. transform : The transform property is used to rotate, scale, move, or skew an element in 2D or 3D space.
+    11. transition : animate a property change smoothly over time (like hover effects).
+            - syntax : transition: property duration timing-function delay;
+    12. Grid : create complex, responsive layouts using rows and columns
+        - to set up grid: use display : grid
+        - To set up rows & columns use : grid-template-rows , grid-template-columns
+    13. Linear Gradient : linear-gradient(side-or-corner, angle, color-stop1, color-stop2, ...);
+    14. Animation in CSS : change CSS properties smoothly over time 
+        - Key Parts of CSS Animation
+            - @keyframes → defines the animation steps
+            - animation → applies the animation to an element
+    15. Examples of animation library : Animate css , aos animation, locomotive animation
+    16. Responsive Website Design using Media Queries
+        - A media query lets you apply CSS only when certain conditions are true, like : screen size, device type, orientation (portrait / landscape)
+        - different styles for different screens.
+        - Basic syntax : @media condition {
+                        /* CSS rules */
+                        }
+        - Common Breakpoints
+            /* Small devices (phones) */
+            @media (max-width: 576px) { }   
+            /* Tablets */
+            @media (min-width: 577px) and (max-width: 768px) { }
+            /* Laptops */
+            @media (min-width: 769px) and (max-width: 992px) { }
+            /* Desktops */
+            @media (min-width: 993px) { }
+
+
+                BOOTSTRAP
+        ------------------------
+    1. front-end CSS framework used to build responsive, mobile-first websites quickly and easily.
+    2. It provides pre-written CSS, JavaScript, and components so you don’t have to style everything from scratch.
+    3. Common Class names for Styling
+        - container / container-fluid
+        - m/mt/me/mb/ms-1-5
+        - p/pt/pe/pb/ps-1-5
+        - border 
+        - rounded
+        - text-center/start/end
+        - color : success/danger/warning/primary/info/dark/light/secondary
+        - bg-color
+        - text-color
+        - w-25/50/75/100
+        - img-fluid img-thumbnail
+        - btn btn-color
+        - fs-1-5
+        - fw-bold/bolder
+        - d-flex justify-content-between
+        - row & col, maximum we can divide a 'row' upto 12 equal parts
+        - Responsive Class : Breakpoints (xs/sm/md/lg/xl/xxl)
+        - Responsive Predefined components : Navbar, Carousel, Accordion
+
+              TAILWIND CSS
+        ------------------------
+
+
+
+
+              GIT & GITHUB
+        ------------------------
+
+        1. Git is distributed version control system used to track changes in source code and collaborate with other developers.
+        2. Git Features
+            - Keeps a history of changes in your project
+            - Allows multiple developers to work simultaneously
+            - Works offline
+            - Fast and secure
+        3. Git & Github
+            | Git                  | GitHub                  |
+            | -------------------- | ----------------------- |
+            | Version control tool | Cloud hosting platform  |
+            | Runs locally         | Runs online             |
+            | Tracks code changes  | Stores Git repositories |
+        4. Basic Git Workflow : Working Directory → Staging Area → Repository
+        5. Most Used Git Commands
+            - Check Git Version : git --version
+            - Initialize Repository : git init
+            - Check Status : git status
+            - Add Files to Staging : git add .
+
+
+
