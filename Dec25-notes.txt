@@ -182,6 +182,7 @@
             - Initialize Repository : git init
             - Check Status : git status
             - Add Files to Staging : git add .
+            - Commit/Save Changes : git commit -m "Initial commit"
 
 
 
